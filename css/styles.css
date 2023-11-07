@@ -33,6 +33,12 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
 
 /*Portfolio*/
 
@@ -452,13 +458,6 @@ img {
     align-items: center;
   }
 
-  .link {
-    text-decoration: none;
-  }
-  .list {
-    list-style: none;
-  }
-
   .logo-web {
     font-family: "Raleway", sans-serif;
     color: var(--color-button);
@@ -469,11 +468,33 @@ img {
     letter-spacing: 0.03em;
     word-wrap: break-word;
     margin-right: 76px;
+    margin-top: 25.5px;
+    margin-bottom: 25.5px;
   }
 
   .logo-text {
     color: var(--color-header);
     text-decoration: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+  }
+
+  .hamburger {
+    fill: #2e2f2e;
+    width: 100%;
+    height: 100%;
   }
 
   .navigation {
@@ -485,7 +506,7 @@ img {
   }
 
   .nav-link {
-    display: inline-block;
+    display: none;
     color: var(--color-header);
     font-size: 16px;
     font-weight: 500;
@@ -520,6 +541,7 @@ img {
   }
 
   .address {
+    display: none;
     font-style: normal;
     margin-left: 332px;
   }
@@ -693,7 +715,7 @@ img {
 
   .fourth-section {
     background-color: var(--color-footer);
-    padding: 120px 0;
+    padding: 96px 0;
   }
   .fourth-section-tittle {
     font-size: 36px;
@@ -712,7 +734,6 @@ img {
   }
 
   .fourth-list-item {
-    width: calc((100% - 82px) / 1);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--color-button-active);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -819,7 +840,7 @@ img {
 
   .footer {
     background-color: var(--color-header);
-    padding: 100px 0;
+    padding: 97.5px 0 96px 0;
   }
 
   .footer-first-div {
@@ -828,9 +849,7 @@ img {
     justify-content: center;
     gap: 72px;
   }
-  .footer-second-div {
-    margin-right: 120px;
-  }
+
   .footer-content {
     color: var(--color-footer);
     font-size: 16px;
@@ -854,9 +873,10 @@ img {
   }
 
   .logo-container {
-    display: inline-block;
-    justify-content: flex-start;
-    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 17.5px;
+    margin-right: 0;
   }
 
   .social-footer {
@@ -868,6 +888,8 @@ img {
     line-height: 24px;
     letter-spacing: 0.32px;
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
   }
 
   .social-media-footer {
@@ -878,7 +900,8 @@ img {
   }
 
   .footer-button-div {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: relative;
   }
 
@@ -892,14 +915,16 @@ img {
     letter-spacing: 0.32px;
     color: var(--color-button-active);
     margin-bottom: 16px;
+    justify-content: center;
   }
+
   .form {
     display: flex;
     flex-direction: column;
     gap: 24px;
   }
   .input {
-    width: 264px;
+    width: 398px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid var(--WHITE, #fff);
@@ -921,11 +946,10 @@ img {
   }
 
   .subscribe-button {
-    display: inline-flex;
     padding: 8px 24px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     background-color: var(--color-button);
     border-radius: 4px;
     color: var(--color-button-active);
@@ -940,11 +964,13 @@ img {
     height: 40px;
     cursor: pointer;
     border: none;
+    margin: 0 auto;
   }
   .submit-button {
     margin-left: 16px;
   }
 }
+
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) {
   /* cały kod */
@@ -965,13 +991,6 @@ img {
   .header-div {
     display: flex;
     align-items: center;
-  }
-
-  .link {
-    text-decoration: none;
-  }
-  .list {
-    list-style: none;
   }
 
   .logo-web {
@@ -1033,7 +1052,9 @@ img {
     background-color: #404bbf;
     border-radius: 2px;
   }
-
+  .menu-toggle {
+    display: none;
+  }
   .address {
     font-style: normal;
     margin-left: 332px;
