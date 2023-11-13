@@ -1674,7 +1674,7 @@ img {
 
 /* ================================================= NOT DESKTOP 👇 ========================================= */
 @media screen and (max-width: 1157px) {
-  .icon-features {
+  .iconki {
     display: none;
   }
 }
