@@ -40,6 +40,83 @@ img {
   list-style: none;
 }
 
+@media screen and (max-width: 427px) {
+  .input {
+    width: 280px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .first-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office-desktop@2x.jpg");
+  }
+}
+/* Mobile */
+@media screen and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .first-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office-mobile@2x.jpg");
+  }
+}
+/* Tablet */
+@media screen and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .first-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office-tablet@2x.jpg");
+  }
+}
+/* Desktop */
+@media screen and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .first-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office-desktop@2x.jpg");
+  }
+}
+@media screen and (max-width: 427px) {
+  .second-list-item > .description {
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 70px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .customers-list-item {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .container {
+    max-width: 428px;
+  }
+}
+
 /*Portfolio*/
 
 .portfolio-section {
