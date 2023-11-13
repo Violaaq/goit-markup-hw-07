@@ -1167,6 +1167,7 @@ img {
   /* cały kod */
   .container {
     width: 768px;
+    margin: 0 auto;
   }
   .header {
     border-bottom: 1px solid #e7e9fc;
@@ -1554,7 +1555,7 @@ img {
     flex-wrap: wrap;
     gap: 24px;
     align-items: baseline;
-    margin-left: 108px;
+    justify-content: center;
   }
   .footer-second-div {
   }
@@ -1683,6 +1684,7 @@ img {
   /* co jest potrzebne dla desktopu */
   .container {
     width: 1158px;
+    margin: 0 auto;
   }
   .header {
     border-bottom: 1px solid #e7e9fc;
