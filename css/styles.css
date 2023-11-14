@@ -40,12 +40,6 @@ img {
   list-style: none;
 }
 
-@media screen and (max-width: 427px) {
-  .input {
-    width: 280px;
-  }
-}
-
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -94,26 +88,6 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/people-office-desktop@2x.jpg");
-  }
-}
-@media screen and (max-width: 427px) {
-  .second-list-item > .description {
-    width: 320px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 70px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 427px) {
-  .customers-list-item {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 428px) {
-  .container {
-    max-width: 428px;
   }
 }
 
@@ -2185,5 +2159,38 @@ img {
   }
   .submit-button {
     margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .input {
+    width: 280px;
+  }
+  .moblie-social-links {
+    gap: 35px;
+  }
+  .mobile-address-tel {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .customers-list-item {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .second-list-item > .description {
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
